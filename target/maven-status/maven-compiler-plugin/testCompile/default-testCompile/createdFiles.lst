@@ -1,0 +1,6 @@
+com\api\tests\LoginAPITest2.class
+com\api\base\BaseService.class
+com\api\models\request\Swift_LoginRequest.class
+com\api\base\Swift_AuthService.class
+com\api\tests\Swift_AuthServiceAPITest.class
+com\api\tests\LoginAPITest.class
