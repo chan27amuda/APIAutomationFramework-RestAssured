@@ -1,21 +1,21 @@
 package com.api.models.request;
 
 public class Swift_LoginRequest {
-	private String userName;
+	private String username;
 	private String password;
 
-	public Swift_LoginRequest(String userName, String password) {
+	public Swift_LoginRequest(String username, String password) {
 		super();
-		this.userName = userName;
+		this.username = username;
 		this.password = password;
 	}
 
-	public String getUserName() {
-		return userName;
+	public String getUsername() {
+		return username;
 	}
 
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setUsername(String username) {
+		this.username = username;
 	}
 
 	public String getPassword() {
@@ -28,7 +28,7 @@ public class Swift_LoginRequest {
 
 	@Override
 	public String toString() {
-		return "Swift_LoginRequest [userName=" + userName + ", password=" + password + "]";
+		return "LoginRequest [username=" + username + ", password=" + password + "]";
 	}
 
 }

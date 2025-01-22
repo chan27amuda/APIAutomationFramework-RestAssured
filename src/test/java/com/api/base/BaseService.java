@@ -1,7 +1,6 @@
 package com.api.base;
 
 import static io.restassured.RestAssured.*;
-
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -21,8 +20,6 @@ public class BaseService {
 	}
 
 	protected Response postRequest(Object payload, String endPoint) {
-		System.out.println("Payload in BaseService is: " + payload);
-		System.out.println("Endpoint in BaseService is: " + endPoint);
 		return requestSpecification.contentType(ContentType.JSON).body(payload).post(endPoint);
 
 	}
